@@ -10,7 +10,7 @@ function main() {
 function lookup_subjects(position) {
     lat = parseFloat(position.coords.latitude);
     lon = parseFloat(position.coords.longitude);
-    url = "http://experimental.worldcat.org/mapfast/services?geo=" + lat + "," + lon + ";crs=wgs84&radius=100000&mq=&sortby=distance&max-results=10";
+    url = "http://experimental.worldcat.org/mapfast/services?geo=" + lat + "," + lon + ";crs=wgs84&radius=100000&mq=&sortby=distance&max-results=15";
     $.getJSON(url, display_subjects);
 }
 
