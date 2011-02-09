@@ -19,7 +19,7 @@ function display_subjects(data) {
 }
 
 function display_subject(index, subject) {
-    s = subject.name.replace(" -- ", " ");
+    s = subject.name.replace(/ -- /g, " ");
     url = "http://www.worldcat.org/search?q=su:" + s + "&qt=advanced";
     $("#subject_list").append('<li><a href="' + url + '">' + subject.name + "</a></li>");
 }
