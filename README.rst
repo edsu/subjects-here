@@ -7,4 +7,5 @@ be taken to a list of titles in `WorldCat <http://worldcat.org>`_
 on that topic.
 
 License: Public Domain
+
 Author: Ed Summers
