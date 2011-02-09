@@ -15,7 +15,6 @@ function lookup_subjects(position) {
 }
 
 function display_subjects(data) {
-    console.log(data);
     $.each(data.Placemark, display_subject);
 }
 
