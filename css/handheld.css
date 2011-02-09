@@ -1,0 +1,21 @@
+body {
+    font-family: 'IM Fell DW Pica', helvetica;
+    font-size: 30pt;
+    width: 100%;
+}
+header {
+    font-size: 60pt;
+    font-weight: bold;
+}
+#subjects li {
+    list-style: none;
+}
+#subjects a {
+    text-decoration: none;
+}
+.about {
+    display: none;
+}
+a {
+    text-decoration: none;
+}
