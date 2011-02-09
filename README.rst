@@ -8,4 +8,4 @@ on that topic.
 
 License: Public Domain
 
-Author: Ed Summers
+Author: Ed Summers <ehs@pobox.com>
