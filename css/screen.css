@@ -27,3 +27,6 @@ header {
 a { 
     text-decoration: none;
 }
+.error {
+    color: red;
+}

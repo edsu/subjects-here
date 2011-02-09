@@ -3,7 +3,7 @@ function main() {
         navigator.geolocation.getCurrentPosition(lookup_subjects);
     }
     else {
-        alert("Sorry, I guess you don't have a geo-aware browser!");
+        display_error();
     }
 }
 
@@ -22,4 +22,9 @@ function display_subject(index, subject) {
     s = subject.name.replace(" -- ", " ");
     url = "http://www.worldcat.org/search?q=su:" + s + "&qt=advanced";
     $("#subject_list").append('<li><a href="' + url + '">' + subject.name + "</a></li>");
+}
+
+function display_error() {
+    html = "<p class='error'>Your browser doesn't seem to support the HTML5 geolocation API. You will need either: Firefox (3.5+), Safari (5.0+) Chrome (5.0+), Opera (10.6+), iPhone (3.0+) or Android (2.0+). Sorry!</p>";
+    $("#subject_list").replaceWith(html);
 }
