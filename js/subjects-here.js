@@ -64,7 +64,7 @@ function display_subject(index, subject) {
     html = '<span class="map_info">' + 
              subject.name + '<br>' + 
              '(' + subject.point.coordinates + ')' +
-             '<br>' +  '<br>' +
+             '<br>' + 
              '<a href="' + url + '" target="_blank">Find Books on ' + 
                '<img class="worldcat" src="http://www.worldcat.org/wcpa/rel20110216/images/logo_wcmasthead_en.png">' + 
              '</a>' +

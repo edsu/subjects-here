@@ -38,4 +38,6 @@ img.worldcat {
     height: 40px;
     vertical-align: middle;
 }
-
+.map_info {
+    height: 225px;
+}
