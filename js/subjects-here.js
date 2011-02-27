@@ -3,8 +3,7 @@ var map;
 function main() {
     if (Modernizr.geolocation) {
         navigator.geolocation.getCurrentPosition(lookup_subjects);
-    }
-    else {
+    } else {
         display_error();
     }
 }
