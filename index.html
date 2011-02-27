@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Subjects-Here</title>
@@ -6,6 +5,7 @@
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="css/screen.css" media="Screen"> 
         <link rel="stylesheet" type="text/css" href="css/handheld.css" media="handheld"> 
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="js/jquery-1.5.min.js"></script>
         <script src="js/modernizr-1.6.min.js"></script>
         <script src="js/subjects-here.js"></script>
@@ -20,25 +20,25 @@
         </script>
     </head>
     <body>
-        
         <header>Subjects <span style="color:green;">Here</a></header>
+        <span id="github">
+            <a href="http://github.com/edsu/subjects-here"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a> 
+        </span>
 
         <div class="about">
         <p>
-        Below is a list of 
+        Below is a map of  
         <a href="http://www.oclc.org/research/activities/fast/default.htm">FAST</a>
         subjects for your current location (10km radius). 
-        If you click on one of the subjects you should be able to see 
+        If you click on one of the markers you should be able to see 
         books about your current location in 
         <a href="http://worldcat.org">WorldCat</a>.
         </p>
         </div>
  
-        <div id="subjects">
-        <ul id="subject_list">
-        </ul>
+        <div id="map_canvas">
         </div>
-        
+
         <div class="about">
 
         <p>
@@ -52,15 +52,11 @@
         <p>If you own an iPhone or equivalent (and are an unabashed 
         library geek) add this page to your 
         <a href="http://www.apple.com/iphone/features/home-screen.html">Home
-            Screen</a>, and you should be able to see subjects & 
+            Screen</a>, and you should be able to see subjects &amp;
         discover books about wherever you happen to be.
         </p>
 
-        <p>The code is all HTML and JavaScript sitting in your browser,
-        but if you want to modify it please send me pull requests on 
-        <a href="http://github.com/edsu/subjects-here">GitHub</a>. </p>
-
         </div>
- 
+    
    </body>
 </html>
