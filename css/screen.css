@@ -18,12 +18,6 @@ header {
     padding-left: 10px;
     padding-right: 10px;
 }
-#subject_list li {
-    list-style: none;
-}
-#subject_list a {
-    text-decoration: none;
-}
 a { 
     text-decoration: none;
 }

@@ -91,9 +91,9 @@ function get_centerpin() {
 
 function get_pin(url) {
     if (is_handheld()) {
-        size = 84; //new google.maps.Size(84, 84);
+        size = 84;
     } else {
-        size = 30; //new google.maps.Size(30, 30);
+        size = 30;
     }
     return new google.maps.MarkerImage(url, new google.maps.Size(64, 64), new google.maps.Point(0, 0), new google.maps.Point(0, size), new google.maps.Size(size, size));
 }

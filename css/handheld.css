@@ -9,12 +9,6 @@ header {
 #github {
     display: none;
 }
-#subjects li {
-    list-style: none;
-}
-#subjects a {
-    text-decoration: none;
-}
 .about {
     display: none;
 }
@@ -25,12 +19,7 @@ a {
     width: 100%;
     height: 100%;
 }
-.pushpin_size {
-    width: 80px, 
-    height: 80px
-}
 img.worldcat {
     height: 100px;
     vertical-align: middle;
 }
-
