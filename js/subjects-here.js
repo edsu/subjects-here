@@ -82,21 +82,20 @@ function display_error() {
 }
 
 function get_pushpin() {
-    pin_size = get_pin_size();
-    return new google.maps.MarkerImage("http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png", new google.maps.Size(64, 64), null, null, pin_size);
+    return get_pin("http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png");
 }
 
 function get_centerpin() {
-    pin_size = get_pin_size();
-    return new google.maps.MarkerImage("http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png", new google.maps.Size(64, 64), null, null, pin_size);
+    return get_pin("http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png");
 }
 
-function get_pin_size() {
+function get_pin(url) {
     if (is_handheld()) {
-        return new google.maps.Size(84, 84);
+        size = 84; //new google.maps.Size(84, 84);
     } else {
-        return new google.maps.Size(30, 30);
+        size = 30; //new google.maps.Size(30, 30);
     }
+    return new google.maps.MarkerImage(url, new google.maps.Size(64, 64), new google.maps.Point(0, 0), new google.maps.Point(0, size), new google.maps.Size(size, size));
 }
 
 function get_zoom() {
